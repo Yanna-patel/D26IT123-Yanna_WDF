@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Study Materials</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>StudentHub</h1>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <nav>
+        <a href="faculty-dashboard.html">Dashboard</a>
+        <a href="faculty-profile.html">Profile</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="study-materials.html">Study Materials</a>
+        <a href="events.html">Events</a>
+        <a href="index.html">Logout</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+    <h2>Study Materials</h2>
+
+    <p>Upload and manage learning resources for students.</p>
+
+</section>
+
+<section class="container">
+
+    <div class="card">
+
+        <h3>Upload Study Material</h3>
+
+        <form>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Enter Subject Name">
+
+            <label for="file">Choose File</label>
+            <input type="file" id="file">
+
+            <button type="submit">Upload</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <div class="card">
+
+        <h3>Uploaded Materials</h3>
+
+        <table>
+
+            <tr>
+                <th>Subject</th>
+                <th>File Name</th>
+                <th>Download</th>
+            </tr>
+
+            <tr>
+                <td>Web Development</td>
+                <td>HTML_Notes.pdf</td>
+                <td><a href="#">Download</a></td>
+            </tr>
+
+            <tr>
+                <td>Database Systems</td>
+                <td>SQL_Basics.pdf</td>
+                <td><a href="#">Download</a></td>
+            </tr>
+
+            <tr>
+                <td>Artificial Intelligence</td>
+                <td>AI_Introduction.pdf</td>
+                <td><a href="#">Download</a></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 StudentHub</p>
+
+</footer>
+
+</body>
+
+</html>

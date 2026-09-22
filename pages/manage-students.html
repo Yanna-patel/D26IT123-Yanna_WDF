@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Manage Students</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>StudentHub</h1>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <nav>
+
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="manage-students.html">Students</a>
+        <a href="manage-faculty.html">Faculty</a>
+        <a href="events.html">Events</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="index.html">Logout</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+    <h2>Manage Students</h2>
+
+    <p>View and manage student records.</p>
+
+</section>
+
+<section class="container">
+
+<div class="card">
+
+<h3>Add New Student</h3>
+
+<form>
+
+<label for="name">Student Name</label>
+<input type="text" id="name" placeholder="Enter Student Name">
+
+<label for="enroll">Enrollment Number</label>
+<input type="text" id="enroll" placeholder="Enter Enrollment Number">
+
+<label for="department">Department</label>
+<input type="text" id="department" placeholder="Enter Department">
+
+<button type="submit">Add Student</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<div class="card">
+
+<h3>Student Records</h3>
+
+<table>
+
+<tr>
+    <th>Enrollment No.</th>
+    <th>Name</th>
+    <th>Department</th>
+    <th>Edit</th>
+    <th>Delete</th>
+</tr>
+
+<tr>
+    <td>23IT001</td>
+    <td>Rahul Patel</td>
+    <td>Information Technology</td>
+    <td><button>Edit</button></td>
+    <td><button>Delete</button></td>
+</tr>
+
+<tr>
+    <td>23IT002</td>
+    <td>Priya Shah</td>
+    <td>Information Technology</td>
+    <td><button>Edit</button></td>
+    <td><button>Delete</button></td>
+</tr>
+
+<tr>
+    <td>23IT003</td>
+    <td>Amit Kumar</td>
+    <td>Computer Engineering</td>
+    <td><button>Edit</button></td>
+    <td><button>Delete</button></td>
+</tr>
+
+<tr>
+    <td>23IT004</td>
+    <td>Neha Joshi</td>
+    <td>Computer Engineering</td>
+    <td><button>Edit</button></td>
+    <td><button>Delete</button></td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>&copy; 2026 StudentHub</p>
+
+</footer>
+
+</body>
+
+</html>

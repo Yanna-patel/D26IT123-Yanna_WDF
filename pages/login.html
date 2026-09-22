@@ -1,0 +1,174 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Login</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo">
+
+            <img src="../images/logo.png" alt="StudentHub Logo">
+
+            <h1>StudentHub</h1>
+
+        </div>
+
+
+        <div class="header-buttons">
+
+            <a href="login.html">
+                <button class="top-button">Login</button>
+            </a>
+
+            <a href="register.html">
+                <button class="top-button">Register</button>
+            </a>
+
+
+            <label class="theme-switch"
+                   for="themeBtn"
+                   title="Toggle Dark/Light Mode">
+
+                <input type="checkbox" id="themeBtn">
+
+                <span class="slider">
+                    <span class="slider-icon">🌙</span>
+                </span>
+
+            </label>
+
+        </div>
+
+    </div>
+
+
+    <nav aria-label="Main Navigation">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="events.html">Events</a>
+
+        <a href="student-profile.html">Profile</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="admin-dashboard.html">Admin</a>
+
+        <a href="faq.html">FAQ</a>
+
+        <a href="feedback.html">Feedback</a>
+
+    </nav>
+
+</header>
+
+
+<!-- Login Form -->
+
+<main class="container">
+
+    <form>
+
+        <h2>Student Login</h2>
+
+
+        <label for="loginEmail">
+            Email
+        </label>
+
+        <input
+            type="email"
+            id="loginEmail"
+            placeholder="Enter your email"
+        >
+
+
+        <label for="loginPassword">
+            Password
+        </label>
+
+        <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter your password"
+        >
+
+
+        <label for="role">
+            Login As
+        </label>
+
+        <select id="role" name="role">
+
+            <option value="">
+                Select Role
+            </option>
+
+            <option>
+                Student
+            </option>
+
+            <option>
+                Faculty
+            </option>
+
+            <option>
+                Admin
+            </option>
+
+        </select>
+
+
+        <button type="submit">
+            Login
+        </button>
+
+
+        <p>
+
+            Don't have an account?
+
+            <a href="register.html">
+                Register Here
+            </a>
+
+        </p>
+
+    </form>
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 StudentHub
+    </p>
+
+</footer>
+
+
+<script src="../javascript/script.js"></script>
+
+</body>
+
+</html>
+```
