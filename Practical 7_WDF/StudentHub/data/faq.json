@@ -1,0 +1,123 @@
+
+[
+    {
+        "id": 1,
+        "question": "How do I register?",
+        "answer": "Visit the Register page, complete the registration form, and submit your details.",
+        "category": "Registration"
+    },
+    {
+        "id": 2,
+        "question": "What details are required during registration?",
+        "answer": "You need to provide the details requested in the registration form, such as your name, email address, mobile number, course, year, and password.",
+        "category": "Registration"
+    },
+    {
+        "id": 3,
+        "question": "What should I do if registration fails?",
+        "answer": "Check that all required fields are completed correctly. Make sure your email and mobile number follow the required format, and try submitting the form again.",
+        "category": "Registration"
+    },
+    {
+        "id": 4,
+        "question": "How do I log in to StudentHub?",
+        "answer": "Open the Login page, enter your registered credentials, and submit the form.",
+        "category": "Account"
+    },
+    {
+        "id": 5,
+        "question": "What should I do if I forget my password?",
+        "answer": "Use the password recovery option if it is available on the Login page. Otherwise, contact the administrator for assistance.",
+        "category": "Account"
+    },
+    {
+        "id": 6,
+        "question": "How do I update my profile?",
+        "answer": "Open the Profile page to view your student information. If editing is supported, update the required fields and save your changes.",
+        "category": "Profile"
+    },
+    {
+        "id": 7,
+        "question": "How do I view campus events?",
+        "answer": "Open the Events page to explore available campus events. Use the search bar and category filter to find events more easily.",
+        "category": "Events"
+    },
+    {
+        "id": 8,
+        "question": "How do I participate in events?",
+        "answer": "Go to the Events page, select an event, and follow its registration or participation instructions.",
+        "category": "Events"
+    },
+    {
+        "id": 9,
+        "question": "How do I search for a specific event?",
+        "answer": "Enter the event name or a relevant keyword in the Events search bar. You can also filter events by category and use the sorting options.",
+        "category": "Events"
+    },
+    {
+        "id": 10,
+        "question": "Can I participate in multiple events?",
+        "answer": "You can participate in multiple events if their participation rules allow it and their schedules do not conflict.",
+        "category": "Events"
+    },
+    {
+        "id": 11,
+        "question": "How do I know whether an event is open for registration?",
+        "answer": "Check the event details and its registration instructions on the Events page. Follow any eligibility requirements and deadlines mentioned there.",
+        "category": "Events"
+    },
+    {
+        "id": 12,
+        "question": "How do I contact the admin?",
+        "answer": "Open the Contact page and use the available contact form to send your message.",
+        "category": "General"
+    },
+    {
+        "id": 13,
+        "question": "Where can I find information about StudentHub?",
+        "answer": "Visit the About page to learn more about StudentHub and its purpose.",
+        "category": "General"
+    },
+    {
+        "id": 14,
+        "question": "How do I submit feedback?",
+        "answer": "Open the Feedback page, complete the available form, and submit your feedback.",
+        "category": "General"
+    },
+    {
+        "id": 15,
+        "question": "How do I report a technical problem?",
+        "answer": "Visit the Contact page and describe the issue you are experiencing, including the page where it occurs and any error message displayed.",
+        "category": "Technical Support"
+    },
+    {
+        "id": 16,
+        "question": "What should I do if a page does not load?",
+        "answer": "Refresh the page, check your internet connection, and try opening the page again. If the problem continues, contact the administrator.",
+        "category": "Technical Support"
+    },
+    {
+        "id": 17,
+        "question": "Why is my profile information not displaying?",
+        "answer": "Check that you are viewing the correct page and that your information has been saved. If the issue persists, contact the administrator.",
+        "category": "Technical Support"
+    },
+    {
+        "id": 18,
+        "question": "How do I switch between dark mode and light mode?",
+        "answer": "Use the theme toggle in the header to switch between dark mode and light mode.",
+        "category": "General"
+    },
+    {
+        "id": 19,
+        "question": "How can an administrator manage the website?",
+        "answer": "Open the Admin page and use the administrative features available to your account.",
+        "category": "Admin"
+    },
+    {
+        "id": 20,
+        "question": "Who should I contact if I need further assistance?",
+        "answer": "Visit the Contact page and send a message describing your question or issue.",
+        "category": "General"
+    }
+]
