@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Home</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-top">
+        
+        <div class="logo">
+            <img src="../images/logo.png" alt="StudentHub Logo">
+            <h1>StudentHub</h1>
+        </div>
+
+        <div class="header-buttons">
+            <a href="login.html">
+                <button class="top-button">Login</button>
+            </a>
+            <a href="register.html">
+                <button class="top-button">Register</button>
+            </a>
+            
+            <label class="theme-switch" for="themeBtn" title="Toggle Dark/Light Mode">
+                <input type="checkbox" id="themeBtn">
+                <span class="slider">
+                    <span class="slider-icon">🌙</span>
+                </span>
+            </label>
+        </div>
+
+    </div>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="student-profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin-dashboard.html">Admin</a>
+        <a href="faq.html">FAQ</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+    
+
+</header>
+
+<section class="hero">
+   <!-- Previous Button --> 
+    <button id="prevBgBtn" class="hero-arrow left-arrow" type="button"> 
+        &lt; 
+    </button> 
+    <div class="hero-content"> 
+        <h2 id="Welcomeheading"> 
+            Welcome to StudentHub 
+        </h2> 
+        <p> Your digital campus companion for academics, 
+            events and student services. 
+        </p> 
+    </div> 
+    <!-- Next Button --> 
+     <button id="nextBgBtn" class="hero-arrow right-arrow" type="button"> 
+        &gt; 
+    </button>
+</section>
+
+<section class="home-controls">
+
+    <div id="notification">
+        <span id="notificationText">
+            📢 Welcome! Registration is Open!
+        </span>
+        <button id="closeBtn" type="button">×</button>
+    </div>
+
+    <div class="control-buttons">
+        <button id="changeBtn" type="button">
+            Change Heading
+        </button>
+        <button id="openModalBtn" type="button">
+            Announcement
+        </button>
+    </div>
+
+</section>
+
+<main>
+    <section class="container">
+        <h2>StudentHub at a Glance</h2>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Latest News</h3>
+                <p>
+                    Registration for the new semester has started.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Upcoming Events</h3>
+                <p>
+                    Annual Tech Fest begins next week.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Student Support</h3>
+                <p>
+                    Access notices, events and academic information anytime.
+                </p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<div id="announcementModal" class="modal">
+    <div class="modal-content">
+        <button id="closeModalBtn" class="modal-close">
+            ×
+        </button>
+        <h2>📢 Announcement</h2>
+        <p>
+            Registration for the new semester is now open.
+            Students are requested to complete their
+            registration before the deadline.
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>
+        &copy; 2026 StudentHub | Designed for CHARUSAT Practical
+    </p>
+</footer>
+
+<script src="../javascript/script.js"></script>
+
+</body>
+</html>
