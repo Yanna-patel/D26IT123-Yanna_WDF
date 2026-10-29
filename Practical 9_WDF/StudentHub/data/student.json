@@ -1,0 +1,83 @@
+
+[
+    {
+        "id": 1,
+        "name": "Yanna Patel",
+        "enrollment": "ST202601",
+        "department": "Information Technology",
+        "semester": 3,
+        "email": "yanna.patel01@studenthub.com",
+        "phone": "9876501001",
+        "photo": "https://randomuser.me/api/portraits/women/44.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Aarav Shah",
+        "enrollment": "ST202602",
+        "department": "Computer Engineering",
+        "semester": 3,
+        "email": "aarav.shah02@studenthub.com",
+        "phone": "9876501002",
+        "photo": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Diya Mehta",
+        "enrollment": "ST202603",
+        "department": "Information Technology",
+        "semester": 5,
+        "email": "diya.mehta03@studenthub.com",
+        "phone": "9876501003",
+        "photo": "https://randomuser.me/api/portraits/women/68.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Rohan Desai",
+        "enrollment": "ST202604",
+        "department": "Computer Engineering",
+        "semester": 1,
+        "email": "rohan.desai04@studenthub.com",
+        "phone": "9876501004",
+        "photo": "https://randomuser.me/api/portraits/men/75.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Ananya Joshi",
+        "enrollment": "ST202605",
+        "department": "Mechanical Engineering",
+        "semester": 3,
+        "email": "ananya.joshi05@studenthub.com",
+        "phone": "9876501005",
+        "photo": "https://randomuser.me/api/portraits/women/21.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Krish Patel",
+        "enrollment": "ST202606",
+        "department": "Information Technology",
+        "semester": 1,
+        "email": "krish.patel06@studenthub.com",
+        "phone": "9876501006",
+        "photo": "https://randomuser.me/api/portraits/men/46.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Mira Trivedi",
+        "enrollment": "ST202607",
+        "department": "Electronics Engineering",
+        "semester": 5,
+        "email": "mira.trivedi07@studenthub.com",
+        "phone": "9876501007",
+        "photo": "https://randomuser.me/api/portraits/women/52.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Dev Shah",
+        "enrollment": "ST202608",
+        "department": "Mechanical Engineering",
+        "semester": 1,
+        "email": "dev.shah08@studenthub.com",
+        "phone": "9876501008",
+        "photo": "https://randomuser.me/api/portraits/men/15.jpg"
+    }
+]
