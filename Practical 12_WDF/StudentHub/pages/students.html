@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management | StudentHub</title>
+    <link rel="stylesheet" href="../css/practical11.css">
+    <script src="../javascript/students.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div>
+            <h1>StudentHub</h1>
+            <p>Practical 11 · Student Management System</p>
+        </div>
+        <a class="back-link" href="login.html">Back to Login</a>
+    </header>
+
+    <main class="container">
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <h2 id="form-title">Add Student</h2>
+                    <p>Add a student or select a record below to edit it.</p>
+                </div>
+            </div>
+
+            <div id="message" class="message" role="status" aria-live="polite"></div>
+
+            <form id="student-form">
+                <input type="hidden" id="student-id" name="id">
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="fullname"
+                               maxlength="150" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email"
+                               maxlength="254" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="course">Course *</label>
+                        <input type="text" id="course" name="course"
+                               maxlength="100" placeholder="e.g. B.Tech" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="role">Role *</label>
+                        <select id="role" name="role" required>
+                            <option value="Student">Student</option>
+                            <option value="Faculty">Faculty</option>
+                            <option value="Admin">Admin</option>
+                        </select>
+                    </div>
+
+                    <div class="field full-width">
+                        <label for="password">
+                            Password <span id="password-label">(required for new students)</span>
+                        </label>
+                        <input type="password" id="password" name="password"
+                               minlength="8" autocomplete="new-password">
+                        <small id="password-help">
+                            At least 8 characters. A password is required when adding a student.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="save-button" class="button primary">
+                        Add Student
+                    </button>
+                    <button type="button" id="cancel-button" class="button secondary" hidden>
+                        Cancel Edit
+                    </button>
+                    <button type="reset" id="clear-button" class="button secondary">
+                        Clear Form
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <h2>Student Records</h2>
+                    <p>Search, filter, edit, or delete existing records.</p>
+                </div>
+                <button type="button" id="refresh-button" class="button secondary">
+                    Refresh
+                </button>
+            </div>
+
+            <div class="filters">
+                <div class="field search-field">
+                    <label for="search">Search students</label>
+                    <input type="search" id="search"
+                           placeholder="Name, email, or course">
+                </div>
+
+                <div class="field">
+                    <label for="course-filter">Filter by Course</label>
+                    <select id="course-filter">
+                        <option value="">All Courses</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="role-filter">Filter by Role</label>
+                    <select id="role-filter">
+                        <option value="">All Roles</option>
+                        <option value="Student">Student</option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </div>
+            </div>
+
+            <p id="record-count" class="record-count">Loading student records...</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Course</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-table-body">
+                        <tr>
+                            <td colspan="6" class="empty-state">Loading records...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>StudentHub · Practical 11 · MySQLi CRUD Operations</p>
+    </footer>
+</body>
+</html>
