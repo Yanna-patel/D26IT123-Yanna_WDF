@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Register</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo">
+            <img src="../images/logo.png" alt="StudentHub Logo">
+            <h1>StudentHub</h1>
+        </div>
+
+        <div class="header-buttons">
+
+            <a href="login.html">
+                <button class="top-button">Login</button>
+            </a>
+
+            <a href="register.html">
+                <button class="top-button">Register</button>
+            </a>
+
+            <label class="theme-switch" for="themeBtn" title="Toggle Dark/Light Mode">
+                <input type="checkbox" id="themeBtn">
+                <span class="slider">
+                    <span class="slider-icon">🌙</span>
+                </span>
+            </label>
+
+        </div>
+
+    </div>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="student-profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin-dashboard.html">Admin</a>
+        <a href="faq.html">FAQ</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+</header>
+
+<!-- Registration Form -->
+
+<main class="container">
+
+    <form>
+
+        <h2>Student Registration</h2>
+
+
+        <label for="name">Full Name</label>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+        >
+
+
+        <label for="email">Email</label>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+        >
+
+
+        <label for="course">Course</label>
+
+        <select id="course">
+
+            <option>B.Tech</option>
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>MCA</option>
+
+        </select>
+
+
+        <label for="role">Register As</label>
+
+        <select id="role" name="role">
+
+            <option value="">Select Role</option>
+            <option>Student</option>
+            <option>Faculty</option>
+
+        </select>
+
+
+        <label for="password">Password</label>
+
+        <input
+            type="password"
+            id="password"
+        >
+
+
+        <label for="confirm">Confirm Password</label>
+
+        <input
+            type="password"
+            id="confirm"
+        >
+
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</main>
+
+
+<footer>
+
+    <p>&copy; 2026 StudentHub</p>
+
+</footer>
+
+
+<script src="../javascript/script.js"></script>
+
+</body>
+
+</html>
