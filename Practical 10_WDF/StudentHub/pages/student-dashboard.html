@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Student Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <img src="../images/logo.png" alt="StudentHub Logo">
+            <h1>StudentHub</h1>
+        </div>
+    </div>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="student-profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h2>Student Dashboard</h2>
+        <p>Welcome to StudentHub!</p>
+    </section>
+
+    <section class="cards">
+        <article class="card">
+            <h3>Upcoming Events</h3>
+            <p>Explore upcoming college events.</p>
+            <a href="events.html">View Events</a>
+        </article>
+
+        <article class="card">
+            <h3>My Profile</h3>
+            <p>View your student profile.</p>
+            <a href="student-profile.html">View Profile</a>
+        </article>
+
+        <article class="card">
+            <h3>Feedback</h3>
+            <p>Share your feedback with StudentHub.</p>
+            <a href="feedback.html">Give Feedback</a>
+        </article>
+    </section>
+
+    <section class="container">
+        <form action="../php/logout.php" method="POST">
+            <button type="submit">Logout</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+
+<script src="../javascript/script.js"></script>
+</body>
+</html>

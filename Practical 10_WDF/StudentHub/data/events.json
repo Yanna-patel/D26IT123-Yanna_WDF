@@ -1,0 +1,167 @@
+[
+    {
+        "id": "101",
+        "title": "Annual Tech Symposium 2026",
+        "description": "A day-long symposium covering AI, web development, and cloud computing with industry experts.",
+        "category": "Technology",
+        "date": "2026-10-15",
+        "time": "09:00 AM",
+        "location": "Main Auditorium",
+        "price": "Free",
+        "speaker": "Dr. Aris Vance"
+    },
+    {
+        "id": "102",
+        "title": "Campus Music & Arts Festival",
+        "description": "Live musical performances, student art exhibitions, and local food pop-ups across campus.",
+        "category": "Arts & Culture",
+        "date": "2026-10-18",
+        "time": "04:00 PM",
+        "location": "Student Quad",
+        "price": "Free",
+        "speaker": "Campus Cultural Club"
+    },
+    {
+        "id": "103",
+        "title": "Web Development Hackathon",
+        "description": "24-hour coding competition focused on building accessible and responsive web applications.",
+        "category": "Technology",
+        "date": "2026-10-22",
+        "time": "10:00 AM",
+        "location": "Innovation Lab 3",
+        "price": "Free",
+        "speaker": "Dev Club Leads"
+    },
+    {
+        "id": "104",
+        "title": "Career Fair & Resume Workshop",
+        "description": "Connect with tech recruiters and receive direct feedback on your CV and portfolio.",
+        "category": "Career",
+        "date": "2026-10-28",
+        "time": "11:00 AM",
+        "location": "Sports Complex Arena",
+        "price": "Free",
+        "speaker": "Career Services Team"
+    },
+    {
+        "id": "105",
+        "title": "UI/UX Design Masterclass",
+        "description": "Hands-on workshop on wireframing, component-driven design systems, and usability testing.",
+        "category": "Design",
+        "date": "2026-11-02",
+        "time": "02:00 PM",
+        "location": "Design Studio B",
+        "price": "$10",
+        "speaker": "Elena Rostova"
+    },
+    {
+        "id": "106",
+        "title": "Data Science & Big Data Conference",
+        "description": "Explore practical data analytics workflows, machine learning models, and real-time processing.",
+        "category": "Technology",
+        "date": "2026-11-05",
+        "time": "09:30 AM",
+        "location": "Seminar Hall 1",
+        "price": "Free",
+        "speaker": "Prof. Marcus Thorne"
+    },
+    {
+        "id": "107",
+        "title": "E-Sports Inter-College Tournament",
+        "description": "Competitive gaming championship featuring Valorant, Rocket League, and Chess.",
+        "category": "Sports",
+        "date": "2026-11-10",
+        "time": "01:00 PM",
+        "location": "Student Activity Center",
+        "price": "Free",
+        "speaker": "Gaming Society"
+    },
+    {
+        "id": "108",
+        "title": "Cybersecurity & Ethical Hacking Bootcamp",
+        "description": "Learn fundamentals of network safety, vulnerability assessment, and penetration testing.",
+        "category": "Technology",
+        "date": "2026-11-14",
+        "time": "10:00 AM",
+        "location": "Computer Lab 4",
+        "price": "$15",
+        "speaker": "Sarah Jenkins"
+    },
+    {
+        "id": "109",
+        "title": "Startup & Entrepreneurship Summit",
+        "description": "Pitch ideas to angel investors and learn how to launch your startup while studying.",
+        "category": "Business",
+        "date": "2026-11-18",
+        "time": "03:00 PM",
+        "location": "Business School Hall",
+        "price": "Free",
+        "speaker": "David Chen"
+    },
+    {
+        "id": "110",
+        "title": "AI in Modern Healthcare Seminar",
+        "description": "Discussion on how machine learning algorithms are revolutionizing diagnostic accuracy.",
+        "category": "Technology",
+        "date": "2026-11-22",
+        "time": "11:00 AM",
+        "location": "Medical Building Auditorium",
+        "price": "Free",
+        "speaker": "Dr. Maya Lin"
+    },
+    {
+        "id": "111",
+        "title": "Open Source Code Sprint",
+        "description": "Collaborative contribution sprint for popular open-source JavaScript and Python repos.",
+        "category": "Technology",
+        "date": "2026-11-25",
+        "time": "01:00 PM",
+        "location": "Library Commons",
+        "price": "Free",
+        "speaker": "OpenSource Org"
+    },
+    {
+        "id": "112",
+        "title": "Photography & Visual Storytelling Workshop",
+        "description": "Master camera settings, framing techniques, and digital editing with Adobe Lightroom.",
+        "category": "Arts & Culture",
+        "date": "2026-12-01",
+        "time": "02:30 PM",
+        "location": "Media Wing Room 102",
+        "price": "$5",
+        "speaker": "Julian Mercer"
+    },
+    {
+        "id": "113",
+        "title": "Cloud Computing with AWS & Azure",
+        "description": "Introductory guide to containerization, serverless functions, and cloud deployment.",
+        "category": "Technology",
+        "date": "2026-12-05",
+        "time": "10:00 AM",
+        "location": "Online / Hybrid",
+        "price": "Free",
+        "speaker": "Siddharth Rao"
+    },
+    {
+        "id": "114",
+        "title": "Mental Health & Academic Wellness Panel",
+        "description": "Interactive mental health awareness session with tips on managing exam stress and workload.",
+        "category": "Wellness",
+        "date": "2026-12-08",
+        "time": "04:00 PM",
+        "location": "Student Lounge",
+        "price": "Free",
+        "speaker": "Campus Wellness Hub"
+    },
+    {
+        "id": "115",
+        "title": "Winter Code Gala & Project Expo",
+        "description": "End-of-semester project exhibition displaying top student projects with awards.",
+        "category": "Technology",
+        "date": "2026-12-15",
+        "time": "05:00 PM",
+        "location": "Main Exhibition Center",
+        "price": "Free",
+        "speaker": "Department Head"
+    }
+]
