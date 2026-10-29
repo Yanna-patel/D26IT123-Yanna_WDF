@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 13 | StudentHub JSON API</title>
+    <link rel="stylesheet" href="../css/practical13.css">
+    <script src="../javascript/practical13.js" defer></script>
+</head>
+<body class="practical13-page">
+    <header class="p13-header">
+        <div>
+            <h1>StudentHub</h1>
+            <p>Practical 13 · PHP JSON API and Fetch API</p>
+        </div>
+        <a href="dashboard.php" class="p13-back">Admin Dashboard</a>
+    </header>
+
+    <main class="p13-container">
+        <section class="p13-card">
+            <h2 id="form-heading">Add Event</h2>
+            <p class="p13-muted">Manage events asynchronously using Fetch API.</p>
+
+            <div id="api-message" class="p13-message" role="status"
+                 aria-live="polite"></div>
+
+            <form id="event-form">
+                <input type="hidden" id="event-id">
+
+                <div class="p13-form-grid">
+                    <div class="p13-field">
+                        <label for="title">Event Title *</label>
+                        <input id="title" maxlength="255" required>
+                    </div>
+
+                    <div class="p13-field">
+                        <label for="category">Category *</label>
+                        <select id="category" required>
+                            <option value="">Select category</option>
+                            <option value="Workshop">Workshop</option>
+                            <option value="Competition">Competition</option>
+                            <option value="Hackathon">Hackathon</option>
+                            <option value="Seminar">Seminar</option>
+                            <option value="Cultural">Cultural</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="p13-field">
+                        <label for="event-date">Date and Time *</label>
+                        <input type="datetime-local" id="event-date" required>
+                    </div>
+
+                    <div class="p13-field">
+                        <label for="location">Location *</label>
+                        <input id="location" maxlength="255" required>
+                    </div>
+
+                    <div class="p13-field p13-full">
+                        <label for="description">Description *</label>
+                        <textarea id="description" rows="4" required></textarea>
+                    </div>
+                </div>
+
+                <div class="p13-actions">
+                    <button type="submit" id="save-button"
+                            class="p13-button p13-primary">Add Event</button>
+                    <button type="button" id="cancel-button"
+                            class="p13-button p13-secondary" hidden>Cancel Edit</button>
+                    <button type="reset" id="clear-button"
+                            class="p13-button p13-secondary">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="p13-card">
+            <div class="p13-list-heading">
+                <div>
+                    <h2>Event Records</h2>
+                    <p class="p13-muted">List, update, and delete events without reloading.</p>
+                </div>
+                <button type="button" id="refresh-button"
+                        class="p13-button p13-secondary">Refresh List</button>
+            </div>
+
+            <p id="event-count" class="p13-muted">Loading events...</p>
+
+            <div class="p13-table-wrap">
+                <table class="p13-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Date and Time</th>
+                            <th>Location</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="event-table-body">
+                        <tr><td colspan="7" class="p13-empty">Loading events...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p13-footer">
+        StudentHub · Practical 13 · Asynchronous CRUD using Fetch API
+    </footer>
+</body>
+</html>

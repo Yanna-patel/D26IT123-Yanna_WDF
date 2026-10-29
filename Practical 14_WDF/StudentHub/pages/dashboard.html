@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Admin Dashboard</title>
+
+    <base href="../pages/">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <img src="../images/logo.png" alt="StudentHub Logo">
+            <h1>StudentHub</h1>
+        </div>
+
+        <div class="header-buttons">
+            <label class="theme-switch" for="themeBtn"
+                   title="Toggle Dark/Light Mode">
+                <input type="checkbox" id="themeBtn">
+                <span class="slider">
+                    <span class="slider-icon">🌙</span>
+                </span>
+            </label>
+        </div>
+    </div>
+
+    <nav id="navigationMenu" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="../php/dashboard.php">Admin Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+</header>
+
+<main class="container admin-dashboard">
+    <h2>Admin Dashboard</h2>
+    <p>Monitor StudentHub accounts, events and registrations.</p>
+
+    <p id="dashboardMessage" role="status" aria-live="polite">
+        Loading dashboard statistics...
+    </p>
+
+    <div class="cards admin-cards">
+        <article class="card">
+            <h3>Total Users</h3>
+            <h2 id="totalUsers">—</h2>
+        </article>
+
+        <article class="card">
+            <h3>Students</h3>
+            <h2 id="studentCount">—</h2>
+        </article>
+
+        <article class="card">
+            <h3>Faculty</h3>
+            <h2 id="facultyCount">—</h2>
+        </article>
+
+        <article class="card">
+            <h3>Events</h3>
+            <h2 id="eventCount">—</h2>
+        </article>
+
+        <article class="card">
+            <h3>Total Registrations</h3>
+            <h2 id="registrationCount">—</h2>
+        </article>
+    </div>
+
+    <section class="card recent-activities">
+        <h3>Latest Registrations</h3>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Registration ID</th>
+                        <th>Student</th>
+                        <th>Email</th>
+                        <th>Event</th>
+                        <th>Registered At</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="registrationsTableBody">
+                    <tr>
+                        <td colspan="6">Loading registrations...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <form action="../php/logout.php" method="POST">
+        <button type="submit">Logout</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+
+<script src="../javascript/script.js"></script>
+<script src="../javascript/admin-dashboard.js"></script>
+<script src="../javascript/dynamic-menu.js"></script>
+
+</body>
+</html>

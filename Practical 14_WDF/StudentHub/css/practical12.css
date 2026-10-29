@@ -1,0 +1,311 @@
+
+.practical12-page {
+    background: #f3f6fb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+.practical12-page .events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 5%;
+    background: linear-gradient(120deg, #142b4a, #2457a7);
+    color: #fff;
+}
+
+.practical12-page .events-header h1 {
+    margin: 0 0 6px;
+    font-size: 28px;
+}
+
+.practical12-page .events-header p {
+    margin: 0;
+    color: #dbeafe;
+}
+
+.practical12-page .events-back {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #a9c6f7;
+    border-radius: 8px;
+    padding: 10px 14px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.practical12-page .events-container {
+    width: 92%;
+    max-width: 1400px;
+    margin: 30px auto;
+}
+
+.practical12-page .events-panel {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px #0f172a0b;
+}
+
+.practical12-page .events-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.practical12-page .events-heading h2 {
+    margin: 0 0 6px;
+    color: #17365f;
+}
+
+.practical12-page .events-heading p {
+    margin: 0;
+    color: #64748b;
+}
+
+.practical12-page .event-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.practical12-page .event-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 0;
+}
+
+.practical12-page .event-field label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.practical12-page .event-field input,
+.practical12-page .event-field select,
+.practical12-page .event-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background: #fff;
+    color: #1f2937;
+    font: inherit;
+}
+
+.practical12-page .event-field textarea {
+    resize: vertical;
+}
+
+.practical12-page .event-field input:focus,
+.practical12-page .event-field select:focus,
+.practical12-page .event-field textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+.practical12-page .event-field small {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.practical12-page .event-full-width {
+    grid-column: 1 / -1;
+}
+
+.practical12-page .event-form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.practical12-page .event-button {
+    border: 0;
+    border-radius: 7px;
+    padding: 11px 16px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.practical12-page .event-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.practical12-page .event-primary {
+    background: #2457a7;
+    color: #fff;
+}
+
+.practical12-page .event-primary:hover:not(:disabled) {
+    background: #173f82;
+}
+
+.practical12-page .event-secondary {
+    background: #e8eef7;
+    color: #17365f;
+}
+
+.practical12-page .event-secondary:hover:not(:disabled) {
+    background: #d8e3f3;
+}
+
+.practical12-page .event-message {
+    display: none;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border-radius: 7px;
+    line-height: 1.5;
+}
+
+.practical12-page .event-message.success {
+    display: block;
+    color: #166534;
+    background: #dcfce7;
+    border: 1px solid #bbf7d0;
+}
+
+.practical12-page .event-message.error {
+    display: block;
+    color: #991b1b;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+}
+
+.practical12-page .events-count {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.practical12-page .events-table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.practical12-page .events-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.practical12-page .events-table th,
+.practical12-page .events-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+}
+
+.practical12-page .events-table th {
+    background: #edf3fc;
+    color: #17365f;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.practical12-page .events-table td {
+    font-size: 14px;
+}
+
+.practical12-page .events-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.practical12-page .event-poster-thumbnail {
+    width: 75px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+.practical12-page .event-current-poster {
+    display: block;
+    width: 160px;
+    max-width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    margin-top: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.practical12-page .current-poster p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.practical12-page .event-row-actions {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.practical12-page .event-action-button {
+    border: 0;
+    border-radius: 5px;
+    padding: 7px 10px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.practical12-page .event-edit-button {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.practical12-page .event-delete-button {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.practical12-page .events-empty {
+    padding: 24px !important;
+    text-align: center;
+    color: #64748b;
+}
+
+.practical12-page .events-footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.practical12-page [hidden] {
+    display: none !important;
+}
+
+@media (max-width: 700px) {
+    .practical12-page .events-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .practical12-page .event-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .practical12-page .event-full-width {
+        grid-column: auto;
+    }
+
+    .practical12-page .events-panel {
+        padding: 17px;
+    }
+
+    .practical12-page .events-heading {
+        align-items: flex-start;
+    }
+}

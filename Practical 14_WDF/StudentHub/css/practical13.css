@@ -1,0 +1,285 @@
+
+.practical13-page {
+    margin: 0;
+    min-height: 100vh;
+    background: #f2f6fc;
+    color: #1e293b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.practical13-page * {
+    box-sizing: border-box;
+}
+
+.practical13-page .p13-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 5%;
+    color: white;
+    background: linear-gradient(120deg, #142b4a, #2859a5);
+}
+
+.practical13-page .p13-header h1 {
+    margin: 0 0 6px;
+    font-size: 29px;
+}
+
+.practical13-page .p13-header p {
+    margin: 0;
+    color: #dbeafe;
+}
+
+.practical13-page .p13-back {
+    padding: 11px 15px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #b6d0fa;
+    border-radius: 8px;
+}
+
+.practical13-page .p13-container {
+    width: 92%;
+    max-width: 1400px;
+    margin: 30px auto;
+}
+
+.practical13-page .p13-card {
+    margin-bottom: 25px;
+    padding: 25px;
+    background: white;
+    border: 1px solid #e0e8f3;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #102b4a0b;
+}
+
+.practical13-page .p13-card h2 {
+    margin: 0 0 8px;
+    color: #17365f;
+}
+
+.practical13-page .p13-muted {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.practical13-page .p13-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 22px;
+}
+
+.practical13-page .p13-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+.practical13-page .p13-field label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.practical13-page .p13-field input,
+.practical13-page .p13-field select,
+.practical13-page .p13-field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background: white;
+    color: #1e293b;
+    font: inherit;
+}
+
+.practical13-page .p13-field textarea {
+    resize: vertical;
+}
+
+.practical13-page .p13-field input:focus,
+.practical13-page .p13-field select:focus,
+.practical13-page .p13-field textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+.practical13-page .p13-full {
+    grid-column: 1 / -1;
+}
+
+.practical13-page .p13-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.practical13-page .p13-button {
+    padding: 11px 16px;
+    border: 0;
+    border-radius: 7px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.practical13-page .p13-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.practical13-page .p13-primary {
+    color: white;
+    background: #2457a7;
+}
+
+.practical13-page .p13-primary:hover:not(:disabled) {
+    background: #173f82;
+}
+
+.practical13-page .p13-secondary {
+    color: #17365f;
+    background: #e8eef7;
+}
+
+.practical13-page .p13-secondary:hover:not(:disabled) {
+    background: #d8e3f3;
+}
+
+.practical13-page .p13-message {
+    display: none;
+    padding: 12px 14px;
+    margin: 18px 0;
+    border-radius: 7px;
+    line-height: 1.5;
+}
+
+.practical13-page .p13-message.success {
+    display: block;
+    color: #166534;
+    background: #dcfce7;
+    border: 1px solid #bbf7d0;
+}
+
+.practical13-page .p13-message.error {
+    display: block;
+    color: #991b1b;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+}
+
+.practical13-page .p13-list-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.practical13-page .p13-list-heading p {
+    margin-bottom: 0;
+}
+
+.practical13-page .p13-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.practical13-page .p13-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.practical13-page .p13-table th,
+.practical13-page .p13-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+
+.practical13-page .p13-table th {
+    color: #17365f;
+    background: #edf3fc;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.practical13-page .p13-table td {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.practical13-page .p13-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.practical13-page .p13-row-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.practical13-page .p13-action-button {
+    padding: 7px 10px;
+    border: 0;
+    border-radius: 5px;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.practical13-page .p13-edit {
+    color: #1d4ed8;
+    background: #dbeafe;
+}
+
+.practical13-page .p13-delete {
+    color: #b91c1c;
+    background: #fee2e2;
+}
+
+.practical13-page .p13-empty {
+    padding: 24px !important;
+    text-align: center;
+    color: #64748b;
+}
+
+.practical13-page .p13-footer {
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.practical13-page [hidden] {
+    display: none !important;
+}
+
+@media (max-width: 700px) {
+    .practical13-page .p13-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .practical13-page .p13-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .practical13-page .p13-full {
+        grid-column: auto;
+    }
+
+    .practical13-page .p13-card {
+        padding: 17px;
+    }
+
+    .practical13-page .p13-list-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
