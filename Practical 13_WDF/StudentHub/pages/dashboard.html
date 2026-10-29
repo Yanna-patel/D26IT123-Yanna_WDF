@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Admin Dashboard</title>
+
+    <base href="../pages/">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <img src="../images/logo.png" alt="StudentHub Logo">
+            <h1>StudentHub</h1>
+        </div>
+
+        <div class="header-buttons">
+            <label class="theme-switch" for="themeBtn"
+                   title="Toggle Dark/Light Mode">
+                <input type="checkbox" id="themeBtn">
+                <span class="slider">
+                    <span class="slider-icon">🌙</span>
+                </span>
+            </label>
+        </div>
+    </div>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="../php/dashboard.php">Admin Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+</header>
+
+<main class="container admin-dashboard">
+    <h2>Admin Dashboard</h2>
+
+    <div class="cards admin-cards">
+        <article class="card">
+            <h3>Students</h3>
+            <h2>350</h2>
+        </article>
+
+        <article class="card">
+            <h3>Events</h3>
+            <h2>15</h2>
+        </article>
+
+        <article class="card">
+            <h3>Faculty</h3>
+            <h2>120</h2>
+        </article>
+    </div>
+
+    <section class="card recent-activities">
+        <h3>Recent Activities</h3>
+        <ul>
+            <li>New Student Registered</li>
+            <li>Faculty Added</li>
+            <li>Workshop Updated</li>
+        </ul>
+    </section>
+
+    <section class="container">
+        <form action="../php/logout.php" method="POST">
+            <button type="submit">Logout</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+
+<script src="../javascript/script.js"></script>
+</body>
+</html>

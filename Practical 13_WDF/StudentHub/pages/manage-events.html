@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Events | StudentHub Admin</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/practical12.css">
+    <script src="../javascript/manage-events.js" defer></script>
+</head>
+<body class="practical12-page">
+    <header class="events-header">
+        <div>
+            <h1>StudentHub</h1>
+            <p>Practical 12 · Admin Event Management</p>
+        </div>
+        <a href="dashboard.php" class="events-back">Admin Dashboard</a>
+    </header>
+
+    <main class="events-container">
+        <section class="events-panel">
+            <div class="events-heading">
+                <div>
+                    <h2 id="event-form-title">Add Event</h2>
+                    <p>Add an event and optionally upload its poster.</p>
+                </div>
+            </div>
+
+            <div id="event-message" class="event-message" role="status"
+                 aria-live="polite"></div>
+
+            <form id="event-form" enctype="multipart/form-data">
+                <input type="hidden" id="event-id" name="id">
+
+                <div class="event-form-grid">
+                    <div class="event-field">
+                        <label for="title">Event Title *</label>
+                        <input type="text" id="title" name="title"
+                               maxlength="255" required>
+                    </div>
+
+                    <div class="event-field">
+                        <label for="category">Category *</label>
+                        <select id="category" name="category" required>
+                            <option value="">Select Category</option>
+                            <option value="Workshop">Workshop</option>
+                            <option value="Competition">Competition</option>
+                            <option value="Hackathon">Hackathon</option>
+                            <option value="Seminar">Seminar</option>
+                            <option value="Cultural">Cultural</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="event-field">
+                        <label for="event_date">Event Date and Time *</label>
+                        <input type="datetime-local" id="event_date"
+                               name="event_date" required>
+                    </div>
+
+                    <div class="event-field">
+                        <label for="location">Location *</label>
+                        <input type="text" id="location" name="location"
+                               maxlength="255" required>
+                    </div>
+
+                    <div class="event-field event-full-width">
+                        <label for="description">Description *</label>
+                        <textarea id="description" name="description"
+                                  rows="4" required></textarea>
+                    </div>
+
+                    <div class="event-field event-full-width">
+                        <label for="poster">Event Poster (JPG, PNG, or WebP)</label>
+                        <input type="file" id="poster" name="poster"
+                               accept="image/jpeg,image/png,image/webp">
+                        <small>Maximum file size: 2 MB. Leave empty when editing to keep the current poster.</small>
+                        <div id="current-poster" class="current-poster"></div>
+                    </div>
+                </div>
+
+                <div class="event-form-actions">
+                    <button type="submit" id="event-save-button"
+                            class="event-button event-primary">Add Event</button>
+                    <button type="button" id="event-cancel-button"
+                            class="event-button event-secondary" hidden>Cancel Edit</button>
+                    <button type="reset" id="event-clear-button"
+                            class="event-button event-secondary">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="events-panel">
+            <div class="events-heading">
+                <div>
+                    <h2>Existing Events</h2>
+                    <p>View, edit, or delete events from the database.</p>
+                </div>
+                <button type="button" id="event-refresh-button"
+                        class="event-button event-secondary">Refresh</button>
+            </div>
+
+            <div id="events-count" class="events-count">Loading events...</div>
+
+            <div class="events-table-wrapper">
+                <table class="events-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Poster</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Date and Time</th>
+                            <th>Location</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="events-table-body">
+                        <tr>
+                            <td colspan="8" class="events-empty">Loading events...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="events-footer">
+        StudentHub · Practical 12 · Event Management
+    </footer>
+</body>
+</html>

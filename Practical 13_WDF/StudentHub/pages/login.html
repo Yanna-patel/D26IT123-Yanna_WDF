@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Login</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <img src="../images/logo.png" alt="StudentHub Logo">
+            <h1>StudentHub</h1>
+        </div>
+
+        <div class="header-buttons">
+            <a href="login.html">
+                <button class="top-button" type="button">Login</button>
+            </a>
+            <a href="register.html">
+                <button class="top-button" type="button">Register</button>
+            </a>
+
+            <label class="theme-switch" for="themeBtn"
+                   title="Toggle Dark/Light Mode">
+                <input type="checkbox" id="themeBtn">
+                <span class="slider">
+                    <span class="slider-icon">🌙</span>
+                </span>
+            </label>
+        </div>
+    </div>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="../php/student-dashboard.php">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="student-profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+
+<main class="container">
+    <form action="../php/login.php" method="POST">
+        <h2>StudentHub Login</h2>
+
+        <p id="loginMessage" role="alert" hidden></p>
+
+        <label for="loginEmail">Email</label>
+        <input
+            type="email"
+            id="loginEmail"
+            name="email"
+            placeholder="Enter your email"
+            autocomplete="username"
+            maxlength="254"
+            required
+        >
+
+        <label for="loginPassword">Password</label>
+        <input
+            type="password"
+            id="loginPassword"
+            name="password"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+            required
+        >
+
+        <button type="submit">Login</button>
+
+        <p>
+            Don't have an account?
+            <a href="register.html">Register Here</a>
+        </p>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+
+<script src="../javascript/script.js"></script>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const error = params.get('error');
+    const message = document.getElementById('loginMessage');
+
+    const messages = {
+        invalid: 'Invalid email or password.',
+        expired: 'Your session expired. Please log in again.',
+        auth: 'Please log in to access that page.',
+        unavailable: 'Login is temporarily unavailable. Please try again.',
+        logout: 'You have been logged out successfully.'
+    };
+
+    if (messages[error]) {
+        message.textContent = messages[error];
+        message.hidden = false;
+    }
+</script>
+
+</body>
+</html>
