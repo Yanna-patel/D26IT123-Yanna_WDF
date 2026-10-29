@@ -1,0 +1,638 @@
+/* =========================================================
+   GLOBAL RESET & BASE STYLES (Mobile-First)
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================================================
+   HEADER & NAVIGATION (Flexbox Layout)
+   ========================================================= */
+
+header {
+    background: #003366;
+    color: white;
+    padding: 15px 5%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.top-button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-button:hover,
+.event-register-btn:hover,
+form button:hover,
+.control-buttons button:hover {
+    background: #e68900;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+nav a {
+    color: #e0e0e0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ffd54f;
+}
+
+/* =========================================================
+   HERO SECTION (Flexbox Alignment)
+   ========================================================= */
+
+.hero {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    ), url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    padding: 25px 5%;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    backdrop-filter: blur(4px);
+}
+
+.hero-content h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   PAGE CONTAINER & LAYOUTS (CSS Grid)
+   ========================================================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003366;
+}
+
+/* 1. HOME & DASHBOARD CARDS GRID */
+.cards,
+.admin-cards,
+.event-list,
+#eventList {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: Single column */
+    gap: 20px;
+}
+
+.card,
+.event-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    min-width: 0;
+}
+
+.card h3,
+.event-card h3 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card p,
+.event-card p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* 2. ABOUT PAGE / ROLES GRID */
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.feature-list i {
+    color: #ff9800;
+    margin-right: 8px;
+}
+
+.roles-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: Single column */
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.role-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 152, 0, 0.1);
+    border: 1px solid #ff9800;
+    color: #333;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* 3. REGISTRATION & FORMS */
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #003366;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form button {
+    width: 100%;
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 4. DASHBOARD & EVENTS SPECIFICS */
+.recent-activities {
+    margin-top: 20px;
+}
+
+.recent-activities ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.recent-activities li {
+    margin-bottom: 8px;
+}
+
+.event-register-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* =========================================================
+   COMPONENTS: MODAL, SWITCH, NOTIFICATIONS
+   ========================================================= */
+
+.home-controls {
+    text-align: center;
+    padding: 25px 20px 10px;
+}
+
+#notification {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#closeBtn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.control-buttons button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Toggle Switch */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: 0.3s ease;
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-icon {
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    position: absolute;
+    background-color: white;
+    transition: 0.3s ease;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    user-select: none;
+}
+
+.theme-switch input:checked + .slider {
+    background-color: #ff9800;
+    border-color: #ff9800;
+}
+
+.theme-switch input:checked + .slider .slider-icon {
+    transform: translateX(25px);
+    background-color: #121826;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* =========================================================
+   DARK MODE OVERRIDES
+   ========================================================= */
+
+body.dark-mode {
+    background: #121826;
+    color: #e2e8f0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background: #0b1120;
+}
+
+body.dark-mode .card,
+body.dark-mode form,
+body.dark-mode .modal-content,
+body.dark-mode .event-card {
+    background: #1e293b;
+    color: #f8fafc;
+}
+
+body.dark-mode .card h3,
+body.dark-mode form h2,
+body.dark-mode .container h2,
+body.dark-mode .event-card h3 {
+    color: #38bdf8;
+}
+
+body.dark-mode .card p,
+body.dark-mode .event-card p {
+    color: #94a3b8;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #334155;
+    color: white;
+    border-color: #475569;
+}
+
+body.dark-mode #notification {
+    background: #1e293b;
+    color: white;
+    border-color: #334155;
+}
+
+body.dark-mode .role-badge {
+    color: #fff;
+    background: rgba(255, 152, 0, 0.2);
+}
+
+/* =========================================================
+   RESPONSIVE MEDIA QUERIES (Mobile-First)
+   ========================================================= */
+
+/* Tablet View (>= 600px) */
+@media (min-width: 600px) {
+    .header-top {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    .cards,
+    .admin-cards,
+    .event-list,
+    #eventList {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+
+    .roles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop View (>= 900px) */
+@media (min-width: 900px) {
+    .hero {
+        min-height: 320px;
+        padding: 40px 5%;
+    }
+
+    .hero-content {
+        max-width: 650px;
+        padding: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .cards,
+    .admin-cards,
+    .event-list,
+    #eventList {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+
+    .roles-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* =========================================================
+   STUDENT PROFILE STYLES
+   ========================================================= */
+
+.profile-card {
+    text-align: center;
+    max-width: 500px;
+    margin: 40px auto; /* Centers the card horizontally on the page */
+}
+
+.profile-header {
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Circular Profile Image */
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #003366;
+        display: block;
+        margin: 20px auto;
+    }
+
+/* Profile Details Formatting */
+.profile-details {
+    text-align: left;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-details strong {
+    color: #003366;
+    display: inline-block;
+    min-width: 170px;
+}
+
+/* Dark Mode Overrides for Profile Details */
+body.dark-mode .profile-details p {
+    color: #e2e8f0;
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .profile-details strong {
+    color: #38bdf8;
+}

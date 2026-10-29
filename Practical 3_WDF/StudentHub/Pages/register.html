@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Register</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-top">
+        
+        <div class="logo">
+            <img src="../images/logo.png" alt="StudentHub Logo">
+            <h1>StudentHub</h1>
+        </div>
+
+        <div class="header-buttons">
+            <a href="login.html">
+                <button class="top-button">Login</button>
+            </a>
+            <a href="register.html">
+                <button class="top-button">Register</button>
+            </a>
+        </div>
+
+    </div>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="student-profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin-dashboard.html">Admin</a>
+        <a href="faq.html">FAQ</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+</header>
+
+
+<main class="container">
+
+    <section class="card">
+
+        <h2>Student Registration</h2>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Registration Details</legend>
+
+                <label for="name">Full Name</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your name"
+                       required>
+
+
+                <label for="email">Email</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+
+
+                <label for="course">Course</label>
+
+                <select id="course" name="course">
+
+                    <option value="">Select Course</option>
+                    <option>B.Tech</option>
+                    <option>BCA</option>
+                    <option>BBA</option>
+                    <option>MCA</option>
+
+                </select>
+
+
+                <label for="role">Register As</label>
+
+                <select id="role" name="role">
+
+                    <option value="">Select Role</option>
+                    <option>Student</option>
+                    <option>Faculty</option>
+
+                </select>
+
+
+                <label for="password">Password</label>
+
+                <input type="password"
+                       id="password"
+                       name="password"
+                       required>
+
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <input type="password"
+                       id="confirmPassword"
+                       name="confirmPassword"
+                       required>
+
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </fieldset>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>&copy; 2026 StudentHub</p>
+
+</footer>
+
+</body>
+</html>
